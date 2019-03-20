@@ -1,0 +1,196 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "quizs"
+  ],
+  "properties": {
+    "quizs": {
+      "$id": "#/properties/quizs",
+      "type": "array",
+      "title": "The Quizs Schema",
+      "items": {
+        "$id": "#/properties/quizs/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "quiz"
+        ],
+        "properties": {
+          "quiz": {
+            "$id": "#/properties/quizs/items/properties/quiz",
+            "type": "object",
+            "title": "The Quiz Schema",
+            "required": [
+              "idQuiz",
+              "participants",
+              "salle",
+              "questions"
+            ],
+            "properties": {
+              "idQuiz": {
+                "$id": "#/properties/quizs/items/properties/quiz/properties/idQuiz",
+                "type": "integer",
+                "title": "The Idquiz Schema",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "participants": {
+                "$id": "#/properties/quizs/items/properties/quiz/properties/participants",
+                "type": "integer",
+                "title": "The Participants Schema",
+                "default": 0,
+                "examples": [
+                  0
+                ]
+              },
+              "salle": {
+                "$id": "#/properties/quizs/items/properties/quiz/properties/salle",
+                "type": "string",
+                "title": "The Salle Schema",
+                "default": "",
+                "examples": [
+                  "la salle de football"
+                ],
+                "pattern": "^(.*)$"
+              },
+              "questions": {
+                "$id": "#/properties/quizs/items/properties/quiz/properties/questions",
+                "type": "object",
+                "title": "The Questions Schema",
+                "required": [
+                  "question"
+                ],
+                "properties": {
+                  "question": {
+                    "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question",
+                    "type": "array",
+                    "title": "The Question Schema",
+                    "items": {
+                      "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items",
+                      "type": "object",
+                      "title": "The Items Schema",
+                      "required": [
+                        "idQuestion",
+                        "thème",
+                        "question",
+                        "reponses",
+                        "bonneRéponse",
+                        "interests",
+                        "notInterests"
+                      ],
+                      "properties": {
+                        "idQuestion": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/idQuestion",
+                          "type": "integer",
+                          "title": "The Idquestion Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        },
+                        "thème": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/thème",
+                          "type": "string",
+                          "title": "The Thème Schema",
+                          "default": "",
+                          "examples": [
+                            "football"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "question": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/question",
+                          "type": "string",
+                          "title": "The Question Schema",
+                          "default": "",
+                          "examples": [
+                            "Quel team a obtenu le championnat de World Cup en 2018?"
+                          ],
+                          "pattern": "^(.*)$"
+                        },
+                        "reponses": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/reponses",
+                          "type": "array",
+                          "title": "The Reponses Schema",
+                          "items": {
+                            "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/reponses/items",
+                            "type": "object",
+                            "title": "The Items Schema",
+                            "required": [
+                              "A"
+                            ],
+                            "properties": {
+                              "A": {
+                                "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/reponses/items/properties/A",
+                                "type": "string",
+                                "title": "The A Schema",
+                                "default": "",
+                                "examples": [
+                                  "France"
+                                ],
+                                "pattern": "^(.*)$"
+                              }
+                            }
+                          }
+                        },
+                        "bonneRéponse": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/bonneRéponse",
+                          "type": "array",
+                          "title": "The Bonneréponse Schema",
+                          "items": {
+                            "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/bonneRéponse/items",
+                            "type": "object",
+                            "title": "The Items Schema",
+                            "required": [
+                              "A"
+                            ],
+                            "properties": {
+                              "A": {
+                                "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/bonneRéponse/items/properties/A",
+                                "type": "string",
+                                "title": "The A Schema",
+                                "default": "",
+                                "examples": [
+                                  "France"
+                                ],
+                                "pattern": "^(.*)$"
+                              }
+                            }
+                          }
+                        },
+                        "interests": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/interests",
+                          "type": "integer",
+                          "title": "The Interests Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        },
+                        "notInterests": {
+                          "$id": "#/properties/quizs/items/properties/quiz/properties/questions/properties/question/items/properties/notInterests",
+                          "type": "integer",
+                          "title": "The Notinterests Schema",
+                          "default": 0,
+                          "examples": [
+                            0
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

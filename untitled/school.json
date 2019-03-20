@@ -1,0 +1,694 @@
+{
+  "engineer": {
+    "-xmlns": "http://www.w3school.com/school.xsd",
+    "information-school": {
+      "nom-school": "Polytech Nice Sophia",
+      "location": "Alpes-Maritimes",
+      "tel": "06839283",
+      "adresse": "730 Route des Colles, 06560 Biot"
+    },
+    "formation-school": {
+      "promotion": [
+        {
+          "année": "3",
+          "responsable-annee": {
+            "res-annee": { "-resIdref": "100" }
+          },
+          "filières": {
+            "filière": [
+              {
+                "nom-filière": "SI",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "100" }
+                },
+                "courss": {
+                  "cours": [
+                    {
+                      "description": { "-courIdref": "1000" },
+                      "pro": { "-proIdref": "100" },
+                      "stu": [
+                        { "-stuIdref": "1" },
+                        { "-stuIdref": "2" },
+                        { "-stuIdref": "3" },
+                        { "-stuIdref": "4" }
+                      ]
+                    },
+                    {
+                      "description": { "-courIdref": "1001" },
+                      "pro": { "-proIdref": "101" },
+                      "stu": [
+                        { "-stuIdref": "5" },
+                        { "-stuIdref": "6" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "nom-filière": "GE",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "102" }
+                },
+                "courss": {
+                  "cours": [
+                    {
+                      "description": { "-courIdref": "1003" },
+                      "pro": { "-proIdref": "103" },
+                      "stu": [
+                        { "-stuIdref": "7" },
+                        { "-stuIdref": "8" },
+                        { "-stuIdref": "9" }
+                      ]
+                    },
+                    {
+                      "description": { "-courIdref": "1004" },
+                      "pro": { "-proIdref": "103" },
+                      "stu": [
+                        { "-stuIdref": "10" },
+                        { "-stuIdref": "11" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "nom-filière": "MAM",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "104" }
+                },
+                "courss": {
+                  "cours": [
+                    {
+                      "description": { "-courIdref": "1005" },
+                      "pro": { "-proIdref": "105" },
+                      "stu": [
+                        { "-stuIdref": "12" },
+                        { "-stuIdref": "13" }
+                      ]
+                    },
+                    {
+                      "description": { "-courIdref": "1002" },
+                      "pro": { "-proIdref": "106" },
+                      "stu": [
+                        { "-stuIdref": "16" },
+                        { "-stuIdref": "17" },
+                        { "-stuIdref": "18" }
+                      ]
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "année": "4",
+          "responsable-annee": {
+            "res-annee": { "-resIdref": "105" }
+          },
+          "filières": {
+            "filière": [
+              {
+                "nom-filière": "SI",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "105" }
+                },
+                "courss": {
+                  "cours": [
+                    {
+                      "description": { "-courIdref": "1006" },
+                      "pro": { "-proIdref": "100" },
+                      "stu": [
+                        { "-stuIdref": "14" },
+                        { "-stuIdref": "15" }
+                      ]
+                    },
+                    {
+                      "description": { "-courIdref": "1007" },
+                      "pro": { "-proIdref": "101" },
+                      "stu": [
+                        { "-stuIdref": "19" },
+                        { "-stuIdref": "20" },
+                        { "-stuIdref": "21" }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "nom-filière": "GE",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "102" }
+                },
+                "courss": {
+                  "cours": {
+                    "description": { "-courIdref": "1005" },
+                    "pro": { "-proIdref": "105" },
+                    "stu": [
+                      { "-stuIdref": "24" },
+                      { "-stuIdref": "25" }
+                    ]
+                  }
+                }
+              },
+              {
+                "nom-filière": "MAM",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "104" }
+                },
+                "courss": {
+                  "cours": {
+                    "description": { "-courIdref": "1008" },
+                    "pro": { "-proIdref": "105" },
+                    "stu": [
+                      { "-stuIdref": "22" },
+                      { "-stuIdref": "23" }
+                    ]
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "année": "5",
+          "responsable-annee": {
+            "res-annee": { "-resIdref": "105" }
+          },
+          "filières": {
+            "filière": [
+              {
+                "nom-filière": "SI",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "106" }
+                },
+                "courss": {
+                  "cours": {
+                    "description": { "-courIdref": "1008" },
+                    "pro": { "-proIdref": "105" },
+                    "stu": { "-stuIdref": "26" }
+                  }
+                }
+              },
+              {
+                "nom-filière": "GE",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "102" }
+                },
+                "courss": {
+                  "cours": {
+                    "description": { "-courIdref": "1009" },
+                    "pro": { "-proIdref": "106" },
+                    "stu": { "-stuIdref": "28" }
+                  }
+                }
+              },
+              {
+                "nom-filière": "MAM",
+                "responsable": {
+                  "res-enseignant": { "-resIdref": "104" }
+                },
+                "courss": {
+                  "cours": {
+                    "description": { "-courIdref": "1006" },
+                    "pro": { "-proIdref": "100" },
+                    "stu": { "-stuIdref": "27" }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "etudiants": {
+      "etudiant": [
+        {
+          "-id": "1",
+          "-specialite": "SI",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Liu",
+            "prenom": "Jiaqi",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "2",
+          "-specialite": "SI",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "WANG",
+            "prenom": "Wei",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "3",
+          "-specialite": "SI",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Theo",
+            "prenom": "Bonnet",
+            "naissance": "1997",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "4",
+          "-specialite": "SI",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Yoo",
+            "prenom": "Kooijman",
+            "naissance": "1992",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "5",
+          "-specialite": "SI",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Louis",
+            "prenom": "Ken",
+            "naissance": "1997",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "6",
+          "-specialite": "SI",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Jennie",
+            "prenom": "Lopez",
+            "naissance": "1995",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "7",
+          "-specialite": "GE",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Laura",
+            "prenom": "Francois",
+            "naissance": "1997",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "8",
+          "-specialite": "GE",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Hugo",
+            "prenom": "Core",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "9",
+          "-specialite": "GE",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Nathan",
+            "prenom": "Lee",
+            "naissance": "1992",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "10",
+          "-specialite": "GE",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Kevin",
+            "prenom": "Choo",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "11",
+          "-specialite": "GE",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Jay",
+            "prenom": "Key",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "12",
+          "-specialite": "MAM",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Lola",
+            "prenom": "Lu",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "13",
+          "-specialite": "MAM",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Sky",
+            "prenom": "Walk",
+            "naissance": "1998",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "14",
+          "-specialite": "MAM",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Tom",
+            "prenom": "Handle",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "15",
+          "-specialite": "GE",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Bannie",
+            "prenom": "Ming",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "16",
+          "-specialite": "MAM",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Black",
+            "prenom": "Jee",
+            "naissance": "1994",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "17",
+          "-specialite": "MAM",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Jack",
+            "prenom": "Doson",
+            "naissance": "1997",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "18",
+          "-specialite": "MAM",
+          "-promo": "3",
+          "info-personal": {
+            "nom": "Stefano",
+            "prenom": "Gaban",
+            "naissance": "1994",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "19",
+          "-specialite": "SI",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Jimmy",
+            "prenom": "Choo",
+            "naissance": "1994",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "20",
+          "-specialite": "SI",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Fendi",
+            "prenom": "Ine",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "21",
+          "-specialite": "SI",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Jenny",
+            "prenom": "Fur",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "22",
+          "-specialite": "MAM",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Andy",
+            "prenom": "Jackson",
+            "naissance": "1993",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "23",
+          "-specialite": "MAM",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Florien",
+            "prenom": "Diva",
+            "naissance": "1996",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "24",
+          "-specialite": "GE",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Harry",
+            "prenom": "Potter",
+            "naissance": "1994",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "25",
+          "-specialite": "GE",
+          "-promo": "4",
+          "info-personal": {
+            "nom": "Ron",
+            "prenom": "Wesley",
+            "naissance": "1995",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "26",
+          "-specialite": "SI",
+          "-promo": "5",
+          "info-personal": {
+            "nom": "Avada",
+            "prenom": "Kelada",
+            "naissance": "1992",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "27",
+          "-specialite": "MAM",
+          "-promo": "5",
+          "info-personal": {
+            "nom": "Ada",
+            "prenom": "Fleur",
+            "naissance": "1993",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "28",
+          "-specialite": "GE",
+          "-promo": "5",
+          "info-personal": {
+            "nom": "Julie",
+            "prenom": "Li",
+            "naissance": "1992",
+            "email": "xxx@unice.fr"
+          }
+        }
+      ]
+    },
+    "enseignants": {
+      "enseignant": [
+        {
+          "-id": "100",
+          "info-personal": {
+            "nom": "Sebastien",
+            "prenom": "Mosser",
+            "naissance": "1970",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "101",
+          "info-personal": {
+            "nom": "Christophe",
+            "prenom": "Papazian",
+            "naissance": "1978",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "102",
+          "info-personal": {
+            "nom": "Bond",
+            "prenom": "Johny",
+            "naissance": "1968",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "103",
+          "info-personal": {
+            "nom": "Blanc",
+            "prenom": "Katy",
+            "naissance": "1978",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "104",
+          "info-personal": {
+            "nom": "Renard",
+            "prenom": "Helene",
+            "naissance": "1990",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "105",
+          "info-personal": {
+            "nom": "Lopez",
+            "prenom": "Dino",
+            "naissance": "1973",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "106",
+          "info-personal": {
+            "nom": "Tigli",
+            "prenom": "Jean-Yves",
+            "naissance": "1981",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "107",
+          "info-personal": {
+            "nom": "Debreve",
+            "prenom": "Eric",
+            "naissance": "1977",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "108",
+          "info-personal": {
+            "nom": "XXX",
+            "prenom": "XX",
+            "naissance": "1978",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "109",
+          "info-personal": {
+            "nom": "Sander",
+            "prenom": "Peter",
+            "naissance": "1988",
+            "email": "xxx@unice.fr"
+          }
+        },
+        {
+          "-id": "110",
+          "info-personal": {
+            "nom": "Lavirrote",
+            "prenom": "Stephane",
+            "naissance": "1982",
+            "email": "xxx@unice.fr"
+          }
+        }
+      ]
+    },
+    "infos-cours": {
+      "info-cour": [
+        {
+          "-courId": "1000",
+          "nom-cour": "Langue C",
+          "intro-cour": "C'est un cours pour la langue C"
+        },
+        {
+          "-courId": "1001",
+          "nom-cour": "Communication",
+          "intro-cour": "C'est pour faire communiquer les etudiants"
+        },
+        {
+          "-courId": "1002",
+          "nom-cour": "SQL",
+          "intro-cour": "C'est un cours pour la base de donnee"
+        },
+        {
+          "-courId": "1003",
+          "nom-cour": "Water Theory",
+          "intro-cour": "Water theory"
+        },
+        {
+          "-courId": "1004",
+          "nom-cour": "Linear Algebra",
+          "intro-cour": "Math cours"
+        },
+        {
+          "-courId": "1005",
+          "nom-cour": "Advanced Algebra",
+          "intro-cour": "Advanced math cours"
+        },
+        {
+          "-courId": "1006",
+          "nom-cour": "Langue C++",
+          "intro-cour": "C'est un cours de C++"
+        },
+        {
+          "-courId": "1007",
+          "nom-cour": "StateMachine",
+          "intro-cour": "C'est un cours FSM"
+        },
+        {
+          "-courId": "1008",
+          "nom-cour": "Modelisation",
+          "intro-cour": "C'est un cours Modelisation."
+        },
+        {
+          "-courId": "1009",
+          "nom-cour": "Water Law",
+          "intro-cour": "C'est un cours sur law de l'eau."
+        }
+      ]
+    }
+  }
+}

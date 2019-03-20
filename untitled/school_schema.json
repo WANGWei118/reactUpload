@@ -1,0 +1,3168 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "engineer": {
+      "type": "object",
+      "properties": {
+        "-xmlns": {
+          "type": "string"
+        },
+        "information-school": {
+          "type": "object",
+          "properties": {
+            "nom-school": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "tel": {
+              "type": "string"
+            },
+            "adresse": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "nom-school",
+            "location",
+            "tel",
+            "adresse"
+          ]
+        },
+        "formation-school": {
+          "type": "object",
+          "properties": {
+            "promotion": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "année": {
+                      "type": "string"
+                    },
+                    "responsable-annee": {
+                      "type": "object",
+                      "properties": {
+                        "res-annee": {
+                          "type": "object",
+                          "properties": {
+                            "-resIdref": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "-resIdref"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "res-annee"
+                      ]
+                    },
+                    "filières": {
+                      "type": "object",
+                      "properties": {
+                        "filière": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "filière"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "année",
+                    "responsable-annee",
+                    "filières"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "année": {
+                      "type": "string"
+                    },
+                    "responsable-annee": {
+                      "type": "object",
+                      "properties": {
+                        "res-annee": {
+                          "type": "object",
+                          "properties": {
+                            "-resIdref": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "-resIdref"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "res-annee"
+                      ]
+                    },
+                    "filières": {
+                      "type": "object",
+                      "properties": {
+                        "filière": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "array",
+                                      "items": [
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        },
+                                        {
+                                          "type": "object",
+                                          "properties": {
+                                            "description": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-courIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-courIdref"
+                                              ]
+                                            },
+                                            "pro": {
+                                              "type": "object",
+                                              "properties": {
+                                                "-proIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-proIdref"
+                                              ]
+                                            },
+                                            "stu": {
+                                              "type": "array",
+                                              "items": [
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "object",
+                                                  "properties": {
+                                                    "-stuIdref": {
+                                                      "type": "string"
+                                                    }
+                                                  },
+                                                  "required": [
+                                                    "-stuIdref"
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "required": [
+                                            "description",
+                                            "pro",
+                                            "stu"
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "description": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-courIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-courIdref"
+                                          ]
+                                        },
+                                        "pro": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-proIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-proIdref"
+                                          ]
+                                        },
+                                        "stu": {
+                                          "type": "array",
+                                          "items": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "-stuIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-stuIdref"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "-stuIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-stuIdref"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "description",
+                                        "pro",
+                                        "stu"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "description": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-courIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-courIdref"
+                                          ]
+                                        },
+                                        "pro": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-proIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-proIdref"
+                                          ]
+                                        },
+                                        "stu": {
+                                          "type": "array",
+                                          "items": [
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "-stuIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-stuIdref"
+                                              ]
+                                            },
+                                            {
+                                              "type": "object",
+                                              "properties": {
+                                                "-stuIdref": {
+                                                  "type": "string"
+                                                }
+                                              },
+                                              "required": [
+                                                "-stuIdref"
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "description",
+                                        "pro",
+                                        "stu"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "filière"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "année",
+                    "responsable-annee",
+                    "filières"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "année": {
+                      "type": "string"
+                    },
+                    "responsable-annee": {
+                      "type": "object",
+                      "properties": {
+                        "res-annee": {
+                          "type": "object",
+                          "properties": {
+                            "-resIdref": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "-resIdref"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "res-annee"
+                      ]
+                    },
+                    "filières": {
+                      "type": "object",
+                      "properties": {
+                        "filière": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "description": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-courIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-courIdref"
+                                          ]
+                                        },
+                                        "pro": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-proIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-proIdref"
+                                          ]
+                                        },
+                                        "stu": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-stuIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-stuIdref"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "description",
+                                        "pro",
+                                        "stu"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "description": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-courIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-courIdref"
+                                          ]
+                                        },
+                                        "pro": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-proIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-proIdref"
+                                          ]
+                                        },
+                                        "stu": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-stuIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-stuIdref"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "description",
+                                        "pro",
+                                        "stu"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "nom-filière": {
+                                  "type": "string"
+                                },
+                                "responsable": {
+                                  "type": "object",
+                                  "properties": {
+                                    "res-enseignant": {
+                                      "type": "object",
+                                      "properties": {
+                                        "-resIdref": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "-resIdref"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "res-enseignant"
+                                  ]
+                                },
+                                "courss": {
+                                  "type": "object",
+                                  "properties": {
+                                    "cours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "description": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-courIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-courIdref"
+                                          ]
+                                        },
+                                        "pro": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-proIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-proIdref"
+                                          ]
+                                        },
+                                        "stu": {
+                                          "type": "object",
+                                          "properties": {
+                                            "-stuIdref": {
+                                              "type": "string"
+                                            }
+                                          },
+                                          "required": [
+                                            "-stuIdref"
+                                          ]
+                                        }
+                                      },
+                                      "required": [
+                                        "description",
+                                        "pro",
+                                        "stu"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "cours"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "nom-filière",
+                                "responsable",
+                                "courss"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "filière"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "année",
+                    "responsable-annee",
+                    "filières"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "promotion"
+          ]
+        },
+        "etudiants": {
+          "type": "object",
+          "properties": {
+            "etudiant": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "-specialite": {
+                      "type": "string"
+                    },
+                    "-promo": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "-specialite",
+                    "-promo",
+                    "info-personal"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "etudiant"
+          ]
+        },
+        "enseignants": {
+          "type": "object",
+          "properties": {
+            "enseignant": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-id": {
+                      "type": "string"
+                    },
+                    "info-personal": {
+                      "type": "object",
+                      "properties": {
+                        "nom": {
+                          "type": "string"
+                        },
+                        "prenom": {
+                          "type": "string"
+                        },
+                        "naissance": {
+                          "type": "string"
+                        },
+                        "email": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "nom",
+                        "prenom",
+                        "naissance",
+                        "email"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "-id",
+                    "info-personal"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "enseignant"
+          ]
+        },
+        "infos-cours": {
+          "type": "object",
+          "properties": {
+            "info-cour": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "-courId": {
+                      "type": "string"
+                    },
+                    "nom-cour": {
+                      "type": "string"
+                    },
+                    "intro-cour": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "-courId",
+                    "nom-cour",
+                    "intro-cour"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "info-cour"
+          ]
+        }
+      },
+      "required": [
+        "-xmlns",
+        "information-school",
+        "formation-school",
+        "etudiants",
+        "enseignants",
+        "infos-cours"
+      ]
+    }
+  },
+  "required": [
+    "engineer"
+  ]
+}

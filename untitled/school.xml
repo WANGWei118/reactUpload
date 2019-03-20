@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="scenario3.xsl" ?>
+<engineer xmlns="http://www.w3school.com/school.xsd">
+    <information-school>
+        <nom-school>Polytech Nice Sophia</nom-school>
+        <location>Alpes-Maritimes</location>
+        <tel>06839283</tel>
+        <adresse>730 Route des Colles, 06560 Biot</adresse>
+    </information-school>
+    <formation-school>
+        <promotion>
+            <année>3</année>
+            <responsable-annee>
+                <res-annee resIdref="100"/>
+            </responsable-annee>
+            <filières>
+                <filière>
+                    <nom-filière>SI</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="100"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1000"/>
+                            <pro proIdref="100"/>
+                            <stu stuIdref="1"/>
+                            <stu stuIdref="2"/>
+                            <stu stuIdref="3"/>
+                            <stu stuIdref="4"/>
+                        </cours>
+                        <cours>
+                            <description courIdref="1001"/>
+                            <pro proIdref="101"/>
+                            <stu stuIdref="5"/>
+                            <stu stuIdref="6"/>
+                        </cours>
+                    </courss>
+                </filière>
+                <filière>
+                    <nom-filière>GE</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="102"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1003"/>
+                            <pro proIdref="103"/>
+                            <stu stuIdref="7"/>
+                            <stu stuIdref="8"/>
+                            <stu stuIdref="9"/>
+                        </cours>
+                        <cours>
+                            <description courIdref="1004"/>
+                            <pro proIdref="103"/>
+                            <stu stuIdref="10"/>
+                            <stu stuIdref="11"/>
+                        </cours>
+                    </courss>
+                </filière>
+                <filière>
+                    <nom-filière>MAM</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="104"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1005"/>
+                            <pro proIdref="105"/>
+                            <stu stuIdref="12"/>
+                            <stu stuIdref="13"/>
+                        </cours>
+                        <cours>
+                            <description courIdref="1002"/>
+                            <pro proIdref="106"/>
+                            <stu stuIdref="16"/>
+                            <stu stuIdref="17"/>
+                            <stu stuIdref="18"/>
+                        </cours>
+                    </courss>
+                </filière>
+            </filières>
+        </promotion>
+        <promotion>
+            <année>4</année>
+            <responsable-annee>
+                <res-annee resIdref="105"/>
+            </responsable-annee>
+            <filières>
+                <filière>
+                    <nom-filière>SI</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="105"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1006"/>
+                            <pro proIdref="100"/>
+                            <stu stuIdref="14"/>
+                            <stu stuIdref="15"/>
+                        </cours>
+                        <cours>
+                            <description courIdref="1007"/>
+                            <pro proIdref="101"/>
+                            <stu stuIdref="19"/>
+                            <stu stuIdref="20"/>
+                            <stu stuIdref="21"/>
+                        </cours>
+                    </courss>
+                </filière>
+                <filière>
+                    <nom-filière>GE</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="102"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1005"/>
+                            <pro proIdref="105"/>
+                            <stu stuIdref="24"/>
+                            <stu stuIdref="25"/>
+                        </cours>
+                    </courss>
+                </filière>
+                <filière>
+                    <nom-filière>MAM</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="104"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1008"/>
+                            <pro proIdref="105"/>
+                            <stu stuIdref="22"/>
+                            <stu stuIdref="23"/>
+                        </cours>
+                    </courss>
+                </filière>
+            </filières>
+        </promotion>
+        <promotion>
+            <année>5</année>
+            <responsable-annee>
+                <res-annee resIdref="105"/>
+            </responsable-annee>
+            <filières>
+                <filière>
+                    <nom-filière>SI</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="106"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1008"/>
+                            <pro proIdref="105"/>
+                            <stu stuIdref="26"/>
+                        </cours>
+                    </courss>
+                </filière>
+                <filière>
+                    <nom-filière>GE</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="102"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1009"/>
+                            <pro proIdref="106"/>
+                            <stu stuIdref="28"/>
+                        </cours>
+                    </courss>
+                </filière>
+                <filière>
+                    <nom-filière>MAM</nom-filière>
+                    <responsable>
+                        <res-enseignant resIdref="104"/>
+                    </responsable>
+                    <courss>
+                        <cours>
+                            <description courIdref="1006"/>
+                            <pro proIdref="100"/>
+                            <stu stuIdref="27"/>
+                        </cours>
+                    </courss>
+                </filière>
+            </filières>
+        </promotion>
+    </formation-school>
+    <etudiants>
+        <etudiant id="1" specialite="SI" promo="3">
+            <info-personal>
+                <nom>Liu</nom>
+                <prenom>Jiaqi</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="2" specialite="SI" promo="3">
+            <info-personal>
+                <nom>WANG</nom>
+                <prenom>Wei</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+
+        <etudiant id="3" specialite="SI" promo="3">
+            <info-personal>
+                <nom>Theo</nom>
+                <prenom>Bonnet</prenom>
+                <naissance>1997</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="4" specialite="SI" promo="3">
+            <info-personal>
+                <nom>Yoo</nom>
+                <prenom>Kooijman</prenom>
+                <naissance>1992</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="5" specialite="SI" promo="3">
+            <info-personal>
+                <nom>Louis</nom>
+                <prenom>Ken</prenom>
+                <naissance>1997</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="6" specialite="SI" promo="3">
+            <info-personal>
+                <nom>Jennie</nom>
+                <prenom>Lopez</prenom>
+                <naissance>1995</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="7" specialite="GE" promo="3">
+            <info-personal>
+                <nom>Laura</nom>
+                <prenom>Francois</prenom>
+                <naissance>1997</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="8" specialite="GE" promo="3">
+            <info-personal>
+                <nom>Hugo</nom>
+                <prenom>Core</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="9" specialite="GE" promo="3">
+            <info-personal>
+                <nom>Nathan</nom>
+                <prenom>Lee</prenom>
+                <naissance>1992</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="10" specialite="GE" promo="3">
+            <info-personal>
+                <nom>Kevin</nom>
+                <prenom>Choo</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="11" specialite="GE" promo="3">
+            <info-personal>
+                <nom>Jay</nom>
+                <prenom>Key</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="12" specialite="MAM" promo="3">
+            <info-personal>
+                <nom>Lola</nom>
+                <prenom>Lu</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="13" specialite="MAM" promo="3">
+            <info-personal>
+                <nom>Sky</nom>
+                <prenom>Walk</prenom>
+                <naissance>1998</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="14" specialite="MAM" promo="4">
+            <info-personal>
+                <nom>Tom</nom>
+                <prenom>Handle</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="15" specialite="GE" promo="4">
+            <info-personal>
+                <nom>Bannie</nom>
+                <prenom>Ming</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="16" specialite="MAM" promo="3">
+            <info-personal>
+                <nom>Black</nom>
+                <prenom>Jee</prenom>
+                <naissance>1994</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="17" specialite="MAM" promo="3">
+            <info-personal>
+                <nom>Jack</nom>
+                <prenom>Doson</prenom>
+                <naissance>1997</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="18" specialite="MAM" promo="3">
+            <info-personal>
+                <nom>Stefano</nom>
+                <prenom>Gaban</prenom>
+                <naissance>1994</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="19" specialite="SI" promo="4">
+            <info-personal>
+                <nom>Jimmy</nom>
+                <prenom>Choo</prenom>
+                <naissance>1994</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="20" specialite="SI" promo="4">
+            <info-personal>
+                <nom>Fendi</nom>
+                <prenom>Ine</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="21" specialite="SI" promo="4">
+            <info-personal>
+                <nom>Jenny</nom>
+                <prenom>Fur</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="22" specialite="MAM" promo="4">
+            <info-personal>
+                <nom>Andy</nom>
+                <prenom>Jackson</prenom>
+                <naissance>1993</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="23" specialite="MAM" promo="4">
+            <info-personal>
+                <nom>Florien</nom>
+                <prenom>Diva</prenom>
+                <naissance>1996</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="24" specialite="GE" promo="4">
+            <info-personal>
+                <nom>Harry</nom>
+                <prenom>Potter</prenom>
+                <naissance>1994</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="25" specialite="GE" promo="4">
+            <info-personal>
+                <nom>Ron</nom>
+                <prenom>Wesley</prenom>
+                <naissance>1995</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="26" specialite="SI" promo="5">
+            <info-personal>
+                <nom>Avada</nom>
+                <prenom>Kelada</prenom>
+                <naissance>1992</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="27" specialite="MAM" promo="5">
+            <info-personal>
+                <nom>Ada</nom>
+                <prenom>Fleur</prenom>
+                <naissance>1993</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+        <etudiant id="28" specialite="GE" promo="5">
+            <info-personal>
+                <nom>Julie</nom>
+                <prenom>Li</prenom>
+                <naissance>1992</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </etudiant>
+    </etudiants>
+
+    <enseignants>
+        <enseignant id="100">
+            <info-personal>
+                <nom>Sebastien</nom>
+                <prenom>Mosser</prenom>
+                <naissance>1970</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="101">
+            <info-personal>
+                <nom>Christophe</nom>
+                <prenom>Papazian</prenom>
+                <naissance>1978</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+
+        <enseignant id="102">
+            <info-personal>
+                <nom>Bond</nom>
+                <prenom>Johny</prenom>
+                <naissance>1968</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+
+        <enseignant id="103">
+            <info-personal>
+                <nom>Blanc</nom>
+                <prenom>Katy</prenom>
+                <naissance>1978</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="104">
+            <info-personal>
+                <nom>Renard</nom>
+                <prenom>Helene</prenom>
+                <naissance>1990</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="105">
+            <info-personal>
+                <nom>Lopez</nom>
+                <prenom>Dino</prenom>
+                <naissance>1973</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="106">
+            <info-personal>
+                <nom>Tigli</nom>
+                <prenom>Jean-Yves</prenom>
+                <naissance>1981</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="107">
+            <info-personal>
+                <nom>Debreve</nom>
+                <prenom>Eric</prenom>
+                <naissance>1977</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="108">
+            <info-personal>
+                <nom>XXX</nom>
+                <prenom>XX</prenom>
+                <naissance>1978</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="109">
+            <info-personal>
+                <nom>Sander</nom>
+                <prenom>Peter</prenom>
+                <naissance>1988</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+        <enseignant id="110">
+            <info-personal>
+                <nom>Lavirrote</nom>
+                <prenom>Stephane</prenom>
+                <naissance>1982</naissance>
+                <email>xxx@unice.fr</email>
+            </info-personal>
+        </enseignant>
+    </enseignants>
+
+    <infos-cours>
+        <info-cour courId="1000">
+            <nom-cour>Langue C</nom-cour>
+            <intro-cour>C'est un cours pour la langue C</intro-cour>
+        </info-cour>
+        <info-cour courId="1001">
+            <nom-cour>Communication</nom-cour>
+            <intro-cour>C'est pour faire communiquer les etudiants</intro-cour>
+        </info-cour>
+        <info-cour courId="1002">
+            <nom-cour>SQL</nom-cour>
+            <intro-cour>C'est un cours pour la base de donnee</intro-cour>
+        </info-cour>
+        <info-cour courId="1003">
+            <nom-cour>Water Theory</nom-cour>
+            <intro-cour>Water theory</intro-cour>
+        </info-cour>
+
+        <info-cour courId="1004">
+            <nom-cour>Linear Algebra</nom-cour>
+            <intro-cour>Math cours</intro-cour>
+        </info-cour>
+
+        <info-cour courId="1005">
+            <nom-cour>Advanced Algebra</nom-cour>
+            <intro-cour>Advanced math cours</intro-cour>
+        </info-cour>
+
+        <info-cour courId="1006">
+            <nom-cour>Langue C++</nom-cour>
+            <intro-cour>C'est un cours de C++</intro-cour>
+        </info-cour>
+
+        <info-cour courId="1007">
+            <nom-cour>StateMachine</nom-cour>
+            <intro-cour>C'est un cours FSM</intro-cour>
+        </info-cour>
+
+        <info-cour courId="1008">
+            <nom-cour>Modelisation</nom-cour>
+            <intro-cour>C'est un cours Modelisation.</intro-cour>
+        </info-cour>
+
+        <info-cour courId="1009">
+            <nom-cour>Water Law</nom-cour>
+            <intro-cour>C'est un cours sur law de l'eau.</intro-cour>
+        </info-cour>
+
+    </infos-cours>
+</engineer>

@@ -1,0 +1,18 @@
+{
+  "quizStat":{
+    "Idquiz": 0,
+    "stat":[
+      {
+        "idQuestion":0,
+        "bonneReponses":0,
+        "mouvaisReponses":0
+      },
+
+      {
+        "idQuestion":1,
+        "bonneReponses":0,
+        "mouvaisReponses":0
+      }
+    ]
+  }
+}

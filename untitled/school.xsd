@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://www.w3school.com/school.xsd"
+           xmlns:mstns="http://www.w3school.com/school.xsd"
+           xmlns = "http://www.w3school.com/school.xsd">
+    <xs:element name="engineer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="information-school"/>
+                <xs:element ref="formation-school"/>
+                <xs:element ref="etudiants"/>
+                <xs:element ref="enseignants"/>
+                <xs:element ref="infos-cours"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="information-school">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom-school"/>
+                <xs:element ref="location"/>
+                <xs:element ref="tel"/>
+                <xs:element ref="adresse"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom-school" type="xs:string"/>
+    <xs:element name="location" type="xs:string"/>
+    <xs:element name="tel" type="xs:integer"/>
+    <xs:element name="adresse" type="xs:string"/>
+    <xs:element name="formation-school">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="promotion"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="promotion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="année"/>
+                <xs:element ref="responsable-annee"/>
+                <xs:element ref="filières"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name = "annéeType">
+        <xs:restriction base = "xs:integer">
+            <xs:minInclusive value ="1" />
+            <xs:maxInclusive value ="5" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="année" type="annéeType"/>
+
+    <xs:element name="responsable-annee">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="res-annee"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="res-annee">
+        <xs:complexType>
+            <xs:attribute name="resIdref" use="required" type="proIdType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="filières">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="filière"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="filière">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom-filière"/>
+                <xs:element ref="responsable"/>
+                <xs:element ref="courss"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom-filière" type="nom-filièreType"/>
+    <xs:simpleType name = "nom-filièreType">
+        <xs:restriction base = "xs:string">
+            <xs:enumeration value="SI"/>
+            <xs:enumeration value="GE"/>
+            <xs:enumeration value="MAM"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="responsable">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="res-enseignant"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="res-enseignant">
+        <xs:complexType>
+            <xs:attribute name="resIdref" use="required" type="proIdType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="courss">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="cours"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="cours">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="description"/>
+                <xs:element ref="pro"/>
+                <xs:element maxOccurs="unbounded" ref="stu"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="description">
+        <xs:complexType>
+            <xs:attribute name="courIdref" use="required" type="courIdType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name = "proIdType">
+        <xs:restriction base = "xs:integer">
+            <xs:pattern value = "[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name = "stuIdType">
+        <xs:restriction base = "xs:integer">
+            <xs:minInclusive value ="1" />
+            <xs:maxInclusive value ="99" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name = "courIdType">
+        <xs:restriction base = "xs:integer">
+            <xs:pattern value = "[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element name="pro">
+        <xs:complexType>
+            <xs:attribute name="proIdref" use="required" type="proIdType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="stu">
+        <xs:complexType>
+            <xs:attribute name="stuIdref" use="required" type="stuIdType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="etudiants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="etudiant"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="etudiant">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="info-personal">
+                    <xs:attribute name="id" use="required" type="stuIdType"/>
+                    <xs:attribute name="promo" use="required" type="annéeType"/>
+                    <xs:attribute name="specialite" use="required" type="nom-filièreType"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="enseignants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="enseignant"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="enseignant">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="info-personal">
+                    <xs:attribute name="id" use="required" type="proIdType"/>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="infos-cours">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="info-cour"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="info-cour">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom-cour"/>
+                <xs:element ref="intro-cour"/>
+            </xs:sequence>
+            <xs:attribute name="courId" use="required" type="courIdType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom-cour" type="xs:string"/>
+    <xs:element name="intro-cour" type="xs:string"/>
+    <xs:complexType name="info-personal">
+        <xs:sequence>
+            <xs:element ref="info-personal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="info-personal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom"/>
+                <xs:element ref="prenom"/>
+                <xs:element ref="naissance"/>
+                <xs:element ref="email"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom" type="xs:string"/>
+    <xs:element name="prenom" type="xs:string"/>
+    <xs:element name="naissance" type="xs:integer"/>
+    <xs:element name="email" type="xs:string"/>
+</xs:schema>

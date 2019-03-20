@@ -1,0 +1,154 @@
+{
+  "quizs": [
+    {
+      "quiz": {
+        "idQuiz": 0,
+        "participants": 0,
+        "salle": "la salle de football",
+        "questions": {
+          "question": [
+            {
+              "idQuestion": 0,
+              "thème": "football",
+              "description": "Quel team a obtenu le championnat de World Cup en 2018?",
+              "reponses": [
+                {
+                  "reponse": "A",
+                  "answer": "France"
+                },
+                {
+                  "reponse": "B",
+                  "answer": "Korea"
+                },
+                {
+                  "reponse": "C",
+                  "answer": "Italy"
+                },
+                {
+                  "reponse": "D",
+                  "answer": "Croatie"
+                }
+              ],
+              "bonneRéponse": [
+                {
+                  "nbReponse": "A",
+                  "answer": "France"
+                }
+              ],
+              "interests": 0,
+              "notInterests": 0
+            },
+            {
+              "idQuestion": 1,
+              "thème": "football",
+              "question": "Quel team a obtenu le plus de championnat de football en Jeux olympiques?",
+              "reponses": [
+                {
+                  "reponse": "A",
+                  "answer": "France"
+                },
+                {
+                  "reponse": "B",
+                  "answer": "Brésil"
+                },
+                {
+                  "reponse": "C",
+                  "answer": "Italy"
+                },
+                {
+                  "reponse": "D",
+                  "answer": "Allemagne"
+                }
+              ],
+              "bonneRéponse": [
+                {
+                  "nbReponse": "D",
+                  "answer": "Brésil"
+                }
+              ],
+              "interests": 0,
+              "notInterests": 0
+            }
+          ]
+        }
+      }
+    },
+
+    {
+      "quiz": {
+        "idQuiz": 1,
+        "participants": 0,
+        "salle": "la salle de baketball",
+        "questions": {
+          "question": [
+            {
+              "idQuestion": 0,
+              "thème": "basketball",
+              "question": "Micheal Jordan a obtenu combien de champinnats de NBA?",
+              "reponses": [
+                {
+                  "reponse": "A",
+                  "answer": "3"
+                },
+                {
+                  "reponse": "B",
+                  "answer": "4"
+                },
+                {
+                  "reponse": "C",
+                  "answer": "5"
+                },
+                {
+                  "reponse": "D",
+                  "answer": "6"
+                }
+              ],
+              "bonneRéponse": [
+                {
+                  "nbReponse": "D",
+                  "answer": "6"
+                }
+              ],
+              "interests": 0,
+              "notInterests": 0
+            },
+            {
+              "idQuestion": 1,
+              "thème": "basketball",
+              "question": "Quel team a obtenu le plus de championnat de NBA?",
+              "reponses": [
+                {
+                  "reponse": "A",
+                  "answer": "Lakers"
+                },
+                {
+                  "reponse": "B",
+                  "answer": "Celtic"
+                },
+                {
+                  "reponse": "C",
+                  "answer": "Bulls"
+                },
+                {
+                  "reponse": "D",
+                  "answer": "Pistons"
+                }
+              ],
+              "bonneRéponse": [
+                {
+                  "nbReponse": "B",
+                  "answer": "Celtic"
+                }
+              ],
+              "interests": 0,
+              "notInterests": 0
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+
+
+
